@@ -1,0 +1,24 @@
+<span>
+    <slot />
+</span>
+
+<style>
+    span {
+        --bg: #242526;
+        --bg-accent: #484a4d;
+        --text-color: #dadce1;
+        --nav-size: 60px;
+        --border: 1px solid #474a4d;
+        --border-radius: 8px;
+        --speed: 500ms;
+    }
+
+    span :global(ul) {
+        list-style: none;
+    }
+
+    span :global(a) {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+</style>
